@@ -10,8 +10,11 @@
 		EB2A0B342290281D0097A940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2A0B332290281D0097A940 /* AppDelegate.swift */; };
 		EB2A0B362290281D0097A940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2A0B352290281D0097A940 /* ViewController.swift */; };
 		EB2A0B392290281D0097A940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2A0B372290281D0097A940 /* Main.storyboard */; };
-		EB2A0B3B2290281F0097A940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2A0B3A2290281F0097A940 /* Assets.xcassets */; };
 		EB2A0B3E2290281F0097A940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2A0B3C2290281F0097A940 /* LaunchScreen.storyboard */; };
+		EB884F9E229B0C0A00759B5E /* popsound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = EB884F9D229B0C0A00759B5E /* popsound.m4a */; };
+		EBC42B4D229AF1910042C55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2A0B3A2290281F0097A940 /* Assets.xcassets */; };
+		EBC42B50229AF47F0042C55D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBC42B4F229AF47F0042C55D /* AVFoundation.framework */; };
+		EBC42B53229AF5010042C55D /* crackedglasssound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBC42B52229AF5000042C55D /* crackedglasssound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +22,12 @@
 		EB2A0B332290281D0097A940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2A0B352290281D0097A940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB2A0B382290281D0097A940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EB2A0B3A2290281F0097A940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB2A0B3A2290281F0097A940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TapCrackerBeta/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		EB2A0B3D2290281F0097A940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB2A0B3F2290281F0097A940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB884F9D229B0C0A00759B5E /* popsound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = popsound.m4a; sourceTree = "<group>"; };
+		EBC42B4F229AF47F0042C55D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EBC42B52229AF5000042C55D /* crackedglasssound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crackedglasssound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC42B50229AF47F0042C55D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				EB2A0B322290281D0097A940 /* TapCrackerBeta */,
 				EB2A0B312290281D0097A940 /* Products */,
+				EBC42B4E229AF47F0042C55D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +62,9 @@
 		EB2A0B322290281D0097A940 /* TapCrackerBeta */ = {
 			isa = PBXGroup;
 			children = (
+				EB884F9D229B0C0A00759B5E /* popsound.m4a */,
 				EB2A0B332290281D0097A940 /* AppDelegate.swift */,
+				EBC42B52229AF5000042C55D /* crackedglasssound.mp3 */,
 				EB2A0B352290281D0097A940 /* ViewController.swift */,
 				EB2A0B372290281D0097A940 /* Main.storyboard */,
 				EB2A0B3A2290281F0097A940 /* Assets.xcassets */,
@@ -62,6 +72,14 @@
 				EB2A0B3F2290281F0097A940 /* Info.plist */,
 			);
 			path = TapCrackerBeta;
+			sourceTree = "<group>";
+		};
+		EBC42B4E229AF47F0042C55D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBC42B4F229AF47F0042C55D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2A0B3E2290281F0097A940 /* LaunchScreen.storyboard in Resources */,
-				EB2A0B3B2290281F0097A940 /* Assets.xcassets in Resources */,
+				EB884F9E229B0C0A00759B5E /* popsound.m4a in Resources */,
+				EBC42B4D229AF1910042C55D /* Assets.xcassets in Resources */,
 				EB2A0B392290281D0097A940 /* Main.storyboard in Resources */,
+				EBC42B53229AF5010042C55D /* crackedglasssound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
